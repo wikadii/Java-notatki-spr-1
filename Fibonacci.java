@@ -35,7 +35,7 @@ public class Fibonacci {
         }
         if(right < 0) return 0;
         if(left >= array.length) return array.length - 1;
-
+        //math.abs nie potrzebne
         if(Math.abs(array[left] - num) < Math.abs(array[right] - num)){
             return left;
         }else{
@@ -43,3 +43,4 @@ public class Fibonacci {
         }
     }
 }
+
